@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects Portfolio - Mahammad Galeeb. Featuring software engineering projects in Java, Data Structures, AWS Cloud, and HTML5 Canvas.">
+  <title>Projects | Mahammad Galeeb - Portfolio</title>
+  
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Global Navigation Bar -->
+  <nav class="sticky-navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-badge">MG</span>
+        <span>Mahammad Galeeb</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="projects.html" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+        <li><a href="certifications.html" class="nav-link"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+        <li><a href="contact.html" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Global Header Slideshow Carousel -->
+  <header class="header-slideshow">
+    <div class="slideshow-wrapper">
+      <div class="slide active">
+        <img class="slide-img" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1600&auto=format&fit=crop" alt="Software Projects Showcase">
+        <div class="slide-overlay">
+          <div class="slide-caption">
+            <h1>Featured Engineering Projects</h1>
+            <p>Explore full-stack applications, cloud solutions, and interactive algorithmic tools.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img class="slide-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1600&auto=format&fit=crop" alt="Data Analytics & Cloud Systems">
+        <div class="slide-overlay">
+          <div class="slide-caption">
+            <h1>Robust & Scalable Systems</h1>
+            <p>Built with modern architectural design patterns and high code efficiency.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img class="slide-img" src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1600&auto=format&fit=crop" alt="Web Development & Canvas Systems">
+        <div class="slide-overlay">
+          <div class="slide-caption">
+            <h1>Interactive & Dynamic Visualizations</h1>
+            <p>Leveraging HTML5 Canvas and Vanilla JavaScript for smooth graphics rendering.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="slideshow-nav">
+      <button class="slide-btn prev-slide" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="slide-btn next-slide" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- Indicator Dots -->
+    <div class="slideshow-dots"></div>
+  </header>
+
+  <!-- Main Projects Showcase -->
+  <main>
+    <div class="page-header">
+      <h1>Featured Software Projects</h1>
+      <p>A collection of applications highlighting expertise in Data Structures, Cloud Architecture, Core Java, and Interactive Frontends.</p>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Responsive Split Project Cards Grid -->
+    <div class="projects-grid">
+
+      <!-- Project Card 1 -->
+      <article class="project-card">
+        <div class="project-image-container">
+          <span class="project-badge">Cloud Architecture</span>
+          <img class="project-img" src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop" alt="AWS Cloud File Storage System Screenshot">
+        </div>
+        <div class="project-details">
+          <div class="project-header">
+            <h3>AWS Enterprise File Vault & Sync</h3>
+            <div class="project-tech">
+              <span class="tech-pill">AWS S3</span>
+              <span class="tech-pill">Java Spring</span>
+              <span class="tech-pill">CloudWatch</span>
+              <span class="tech-pill">REST API</span>
+            </div>
+          </div>
+          <p class="project-desc">A resilient, cloud-native file storage system deployed on AWS S3 and EC2 instances with encrypted access, automatic failover backup, automated lifecycle management, and detailed monitoring logs.</p>
+          <div class="project-actions">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <i class="fa-brands fa-github"></i> GitHub Link
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 2 (Alternating Layout) -->
+      <article class="project-card reverse">
+        <div class="project-image-container">
+          <span class="project-badge">Graphics & Canvas</span>
+          <img class="project-img" src="https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=800&auto=format&fit=crop" alt="Interactive Data Structure Visualizer Screenshot">
+        </div>
+        <div class="project-details">
+          <div class="project-header">
+            <h3>Interactive DSA Visualizer Engine</h3>
+            <div class="project-tech">
+              <span class="tech-pill">HTML5 Canvas</span>
+              <span class="tech-pill">Vanilla JS (ES6+)</span>
+              <span class="tech-pill">Algorithms</span>
+              <span class="tech-pill">CSS3 Grid</span>
+            </div>
+          </div>
+          <p class="project-desc">An interactive web visualization suite created with HTML5 Canvas that animates complex Data Structures & Algorithms including Graph Shortest Path (Dijkstra/A*), Tree Traversals, and Sorting algorithms in real-time.</p>
+          <div class="project-actions">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <i class="fa-brands fa-github"></i> GitHub Link
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project Card 3 -->
+      <article class="project-card">
+        <div class="project-image-container">
+          <span class="project-badge">Core Java</span>
+          <img class="project-img" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop" alt="Multithreaded Banking Engine Screenshot">
+        </div>
+        <div class="project-details">
+          <div class="project-header">
+            <h3>Multithreaded Banking & Ledger Engine</h3>
+            <div class="project-tech">
+              <span class="tech-pill">Java 17</span>
+              <span class="tech-pill">Concurrency</span>
+              <span class="tech-pill">Data Structures</span>
+              <span class="tech-pill">OOP Design</span>
+            </div>
+          </div>
+          <p class="project-desc">High-throughput financial ledger handling concurrent transactions using thread pools, lock-free data structures, atomics, and strict thread safety guarantees for zero race conditions.</p>
+          <div class="project-actions">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <i class="fa-brands fa-github"></i> GitHub Link
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Mahammad Galeeb. All Rights Reserved. Built with HTML5, CSS3 &amp; Vanilla JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- Global JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
