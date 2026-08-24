@@ -56,7 +56,7 @@ const Certifications = () => {
 
       <div class="cert-grid">
         {certsList.map(cert => (
-          <a 
+          <a
             key={cert.id}
             href={cert.driveUrl}
             target="_blank"

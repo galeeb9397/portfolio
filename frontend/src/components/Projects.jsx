@@ -20,27 +20,35 @@ const Projects = () => {
         setProjects([
           {
             id: 1,
-            title: "Advanced Drag & Drop Task Manager",
-            description: "A highly responsive MERN web application featuring drag-and-drop state management, Kanban project boards, real-time sync, and user access control.",
-            imageUrl: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?q=80&w=800&auto=format&fit=crop",
-            githubLink: "https://github.com/galeeb9397",
-            demoLink: "https://github.com/galeeb9397"
+            title: "Expense_Tracker_Online",
+            description: "Expense Tracker Online is a full-stack personal finance management application that allows users to register/login, record income and expenses, manage transactions, view financial summaries through a dashboard, filter transactions by time period, and monitor their overall financial activity.\n\nTechnology Stack:\nReact.js + Vite | Node.js + Express.js | MongoDB | REST APIs",
+            imageUrl: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=800&auto=format&fit=crop",
+            githubLink: "https://github.com/galeeb9397/Expense_Tracker_Online",
+            demoLink: "https://expense-tracker-online-opal.vercel.app"
           },
           {
             id: 2,
-            title: "HTML5 Canvas Application",
-            description: "An interactive graphics engine built with HTML5 Canvas and JavaScript to render and animate complex algorithmic visualizations, particle simulations, and tree traversals.",
-            imageUrl: "https://images.unsplash.com/photo-1509228468518-180dd4864904?q=80&w=800&auto=format&fit=crop",
-            githubLink: "https://github.com/galeeb9397",
-            demoLink: "https://github.com/galeeb9397"
+            title: "resumeai",
+            description: "ResumeAI is an AI-powered resume analysis and job-matching application that compares a candidate’s resume with a job description. It uses Python, FastAPI, SQLite, Ollama, and Gemma 3 to generate match scores, identify missing skills, provide ATS feedback, suggest improvements, and create downloadable analysis reports.",
+            imageUrl: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=800&auto=format&fit=crop",
+            githubLink: "https://github.com/galeeb9397/resumeai",
+            demoLink: "https://resumeai-five-alpha.vercel.app"
           },
           {
             id: 3,
-            title: "AWS Cloud Infrastructure Vault",
-            description: "A resilient cloud-native document storage system leveraging AWS S3, EC2 instances, and automated CI/CD deployment pipelines with high availability.",
-            imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
-            githubLink: "https://github.com/galeeb9397",
-            demoLink: "https://github.com/galeeb9397"
+            title: "Smart Electronic Voting Machine",
+            description: "Smart Electronic Voting Machine — Most Social Relevant Award | VIT-AP University\n\nDeveloped an IoT-based smart electronic voting machine using fingerprint authentication to reduce voting malpractice and prevent duplicate voting. Integrated Blynk for live monitoring of cast votes. Implemented the duplicate-vote prevention mechanism using a Boolean array. Won the Most Social Relevant Award among approximately 900 projects during the Engineering Clinics semester.",
+            imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?q=80&w=800&auto=format&fit=crop",
+            githubLink: "https://drive.google.com/file/d/1aVTPlIVBq-PNIjNbf8xB6RKTVJXzK5ew/view?usp=sharing",
+            demoLink: "https://drive.google.com/file/d/1aVTPlIVBq-PNIjNbf8xB6RKTVJXzK5ew/view?usp=sharing"
+          },
+          {
+            id: 4,
+            title: "bookreview",
+            description: "Developed a full-stack Book Review Website enabling users to discover books, submit ratings and reviews, and explore community feedback through a responsive and interactive platform.",
+            imageUrl: "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?q=80&w=800&auto=format&fit=crop",
+            githubLink: "https://github.com/galeeb9397/bookreview",
+            demoLink: "https://bookreview-83py-git-main-portfolio-725c.vercel.app"
           }
         ]);
       } finally {
@@ -67,8 +75,8 @@ const Projects = () => {
       ) : (
         <div class="projects-grid">
           {projects.map((proj, idx) => (
-            <article 
-              key={proj._id || proj.id || idx} 
+            <article
+              key={proj._id || proj.id || idx}
               class={`project-card ${idx % 2 === 1 ? 'reverse' : ''}`}
             >
               <div class="project-image-container">
@@ -80,21 +88,21 @@ const Projects = () => {
                 </div>
                 <p class="project-desc">{proj.description}</p>
                 <div class="project-actions">
-                  <a 
-                    href={proj.githubLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={proj.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-secondary btn-sm"
                   >
-                    <i class="fa-brands fa-github"></i> GitHub Link
+                    <i class={proj.githubLink && proj.githubLink.includes('drive.google.com') ? "fa-solid fa-award" : "fa-brands fa-github"}></i> {proj.githubLink && proj.githubLink.includes('drive.google.com') ? "View Certificate" : "GitHub Link"}
                   </a>
-                  <a 
-                    href={proj.demoLink} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={proj.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary btn-sm"
                   >
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                    <i class={proj.demoLink && proj.demoLink.includes('drive.google.com') ? "fa-solid fa-file-pdf" : "fa-solid fa-arrow-up-right-from-square"}></i> {proj.demoLink && proj.demoLink.includes('drive.google.com') ? "Award Document" : "Live Demo"}
                   </a>
                 </div>
               </div>

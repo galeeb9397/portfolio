@@ -12,12 +12,12 @@ const Contact = () => {
 
         {/* Centralized App-Like Grid */}
         <div class="contact-app-grid">
-          
+
           {/* LinkedIn */}
-          <a 
-            href="https://www.linkedin.com/in/mahammadgaleeb7/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://www.linkedin.com/in/mahammadgaleeb7/"
+            target="_blank"
+            rel="noopener noreferrer"
             class="app-card linkedin"
           >
             <div class="app-icon-wrapper">
@@ -29,10 +29,10 @@ const Contact = () => {
           </a>
 
           {/* GitHub */}
-          <a 
-            href="https://github.com/galeeb9397" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://github.com/galeeb9397"
+            target="_blank"
+            rel="noopener noreferrer"
             class="app-card github"
           >
             <div class="app-icon-wrapper">
@@ -44,8 +44,8 @@ const Contact = () => {
           </a>
 
           {/* Phone / Email */}
-          <a 
-            href="mailto:mahammadgaleeb@gmail.com" 
+          <a
+            href="mailto:mahammadgaleeb@gmail.com"
             class="app-card email"
           >
             <div class="app-icon-wrapper">
@@ -57,10 +57,10 @@ const Contact = () => {
           </a>
 
           {/* Google Drive Access Resume */}
-          <a 
-            href="https://drive.google.com/file/d/1_xQMFP6EwWBqApdDZV3u0RCTA_p35k8e/view?usp=sharing" 
-            target="_blank" 
-            rel="noopener noreferrer" 
+          <a
+            href="https://drive.google.com/file/d/1_xQMFP6EwWBqApdDZV3u0RCTA_p35k8e/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
             class="app-card drive"
           >
             <div class="app-icon-wrapper">

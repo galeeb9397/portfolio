@@ -3,17 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   const skillsList = [
-    "Java",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "Data Structures & Algorithms",
-    "AWS Cloud Practitioner",
-    "Machine Learning",
-    "Quantum Computing",
-    "Information Theory",
-    "Automata Theory",
-    "Linear Block Codes"
+    "English",
+    "Telugu",
+    "Hindi",
+    "Spanish"
   ];
 
   return (
@@ -22,10 +15,10 @@ const Home = () => {
       <div class="hero-box">
         <h2>Mahammad Galeeb</h2>
         <p class="hero-subtitle">Aspiring Software Engineer | VIT-AP University</p>
-        
+
         <div class="goal-card">
           <p>
-            "I am a dedicated computer science student focusing on algorithmic problem-solving and software development. My goal is to leverage my technical skills to secure a position at Google, building scalable and impactful technological solutions."
+            "I am a dedicated computer science student focusing on algorithmic problem-solving and software development. My goal is to leverage my technical skills to building scalable and impactful technological solutions."
           </p>
         </div>
 
@@ -48,18 +41,18 @@ const Home = () => {
           <i class="fa-solid fa-user-tie"></i> About Me
         </h2>
         <p>
-          I am a Computer Science student at <strong>VIT-AP University</strong> driven by a passion for algorithmic optimization, full-stack software development, and cloud computing architectures. My technical journey is focused on theoretical foundations and practical application engineering.
+          I am a fourth-year Computer Science student at <strong>VIT-AP University</strong>, driven by a passion for algorithmic optimization, full-stack software development, and cloud computing architectures. My technical journey focuses on combining strong theoretical foundations with practical software engineering and application development.
         </p>
         <br />
         <p>
-          From exploring complex Automata Theory and Quantum Computing models to building MERN stack web applications and AWS cloud integrations, I maintain a rigorous dedication to engineering principles, clean code standards, and high-performance algorithms.
+          I am AWS Certified Cloud Practitioner and AWS Certified Solutions Architect – Associate, with a CGPA of 9.49.
         </p>
       </section>
 
       {/* Technical Skills Section */}
       <section class="card-section">
         <h2 class="section-title">
-          <i class="fa-solid fa-laptop-code"></i> Technical Skills &amp; Knowledge Areas
+          <i class="fa-solid fa-laptop-code"></i> Communication Skills
         </h2>
         <div class="skills-badge-grid">
           {skillsList.map((skill, index) => (
@@ -71,22 +64,56 @@ const Home = () => {
       </section>
 
       {/* Languages Section */}
-      <section class="card-section">
-        <h2 class="section-title">
-          <i class="fa-solid fa-language"></i> Languages
+      {/* Tech Stack Section */}
+      <section className="card-section">
+        <h2 className="section-title">
+          <i className="fa-solid fa-code"></i> Tech Stack
         </h2>
-        <div class="languages-grid">
-          <div class="lang-item">
-            <span class="lang-name"><i class="fa-solid fa-comments"></i> English</span>
-            <span class="lang-level">Full Professional</span>
+
+        <div className="skills-grid">
+          <div className="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" className="skill-icon" />
+            <p>Java</p>
           </div>
-          <div class="lang-item">
-            <span class="lang-name"><i class="fa-solid fa-code"></i> Java &amp; C++</span>
-            <span class="lang-level">Advanced</span>
+
+          <div className="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" className="skill-icon" />
+            <p>Python</p>
           </div>
-          <div class="lang-item">
-            <span class="lang-name"><i class="fa-solid fa-globe"></i> Hindi / Regional</span>
-            <span class="lang-level">Native / Fluent</span>
+
+          <div className="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C/C++" className="skill-icon" />
+            <p>C/C++</p>
+          </div>
+
+          <div className="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL" className="skill-icon" />
+            <p>SQL</p>
+          </div>
+
+          <div className="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" className="skill-icon" />
+            <p>HTML</p>
+          </div>
+
+          <div className="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" className="skill-icon" />
+            <p>CSS</p>
+          </div>
+
+          <div className="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" className="skill-icon" />
+            <p>JavaScript</p>
+          </div>
+
+          <div className="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" className="skill-icon" />
+            <p>Node.js</p>
+          </div>
+
+          <div className="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" className="skill-icon" />
+            <p>React</p>
           </div>
         </div>
       </section>
@@ -103,10 +130,10 @@ const Home = () => {
               <div class="timeline-role">B.Tech in Computer Science &amp; Engineering</div>
               <div class="timeline-meta">
                 <span><i class="fa-solid fa-graduation-cap"></i> VIT-AP University</span>
-                <span><i class="fa-solid fa-calendar"></i> 2021 - Present</span>
+                <span><i class="fa-solid fa-calendar"></i> 2023 - Present</span>
               </div>
               <p class="timeline-desc">
-                Focusing on Data Structures &amp; Algorithms, Machine Learning, Automata Theory, Information Theory, Quantum Computing, and MERN stack engineering.
+                Focusing on Data Structures &amp; Algorithms, Machine Learning,DBMS,Software engineering,OOPs and MERN stack engineering.
               </p>
             </div>
           </div>
@@ -117,10 +144,12 @@ const Home = () => {
               <div class="timeline-role">Software Engineering &amp; Project Lead</div>
               <div class="timeline-meta">
                 <span><i class="fa-solid fa-code"></i> Academic &amp; Personal Projects</span>
-                <span><i class="fa-solid fa-calendar"></i> 2023 - Present</span>
+                <span><i class="fa-solid fa-calendar"></i> 2023 - 2025</span>
               </div>
               <p class="timeline-desc">
-                Architected full-stack React applications, HTML5 Canvas interactive graphics tools, and AWS cloud storage services.
+                1. Build the Samrt electronic Voting Machine and Won the "Most Social Revelaent Award".<span><i class="fa-solid fa-calendar"></i> 2023 - 2024</span><br />
+                2. Worked as Co-lead for Technical team in Nextgen Cloud Club at VIT-AP University.<span><i class="fa-solid fa-calendar"></i> 2024 - 2025</span>
+
               </p>
             </div>
           </div>
