@@ -24,24 +24,24 @@ const certsList = [
   },
   {
     id: 4,
-    title: "Quantum Computing & Algorithms",
+    title: "Quantum Fundamentals",
     issuer: "VIT-AP University / Academic Research",
     imageUrl: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=800&auto=format&fit=crop",
-    driveUrl: "https://drive.google.com/file/d/18Do5oMIj2iJDTV2PiwDI0xp0k09wr3jJ/view?usp=sharing"
+    driveUrl: "https://drive.google.com/file/d/1kxem4CEJUiNAdU70I0RriAMZuXlGvpa9/view?usp=sharing"
   },
   {
     id: 5,
     title: "NGC Club Member Certificate",
     issuer: "Next Generation Coding (NGC) Club",
     imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop",
-    driveUrl: "https://drive.google.com/file/d/18Do5oMIj2iJDTV2PiwDI0xp0k09wr3jJ/view?usp=sharing"
+    driveUrl: "https://drive.google.com/file/d/1OZjqvwTb2JGAaG9DV-IXfgTmjxG3mbuq/view?usp=sharing"
   },
   {
     id: 6,
-    title: "LaTeX Technical Publishing & Documentation",
+    title: "Hedera Certified Developer Associate HCDA",
     issuer: "Academic Workshop & Technical Writing",
     imageUrl: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop",
-    driveUrl: "https://drive.google.com/file/d/18Do5oMIj2iJDTV2PiwDI0xp0k09wr3jJ/view?usp=sharing"
+    driveUrl: "https://drive.google.com/file/d/1gmIGQNn2LKHTbiYqNWrBLUCDq9Unnijc/view?usp=sharing"
   }
 ];
 

@@ -58,7 +58,7 @@ const Contact = () => {
 
           {/* Google Drive Access Resume */}
           <a
-            href="https://drive.google.com/file/d/1_xQMFP6EwWBqApdDZV3u0RCTA_p35k8e/view?usp=sharing"
+            href="https://drive.google.com/file/d/1PoFdyEKk5grB81wNFboNXySjye3TWl0T/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             class="app-card drive"
